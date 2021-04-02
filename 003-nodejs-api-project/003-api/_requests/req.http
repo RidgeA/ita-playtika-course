@@ -1,0 +1,32 @@
+POST http://localhost:3000/?param=value&count=1
+Content-Type: application/json
+
+{
+  "hello": "world"
+}
+
+###
+
+GET http://localhost:3000/products
+
+
+###
+GET http://localhost:3000/products/2
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "product 2"
+}
+
+###
+POST http://localhost:3000/upload
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="source.csv"
+
+< ./source.csv
+--boundary--

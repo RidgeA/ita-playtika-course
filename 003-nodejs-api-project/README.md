@@ -26,7 +26,7 @@
 
 [fastify](https://github.com/fastify/fastify)
 
-[NestJS (TS-based)](https://loopback.io/)
+[NestJS (TS-based)](https://nextjs.com/)
 
 [loopback (TS-based)](https://loopback.io/)
 

@@ -42,7 +42,7 @@ class ProductsController {
     const {id} = req.params;
     const product = await this.#repo.getById(id);
     if (!product) {
-      return res.status(404).send({message: 'Product not found'});
+      return res.status(404).send({message: 'ProductDto not found'});
     }
     return product;
   }

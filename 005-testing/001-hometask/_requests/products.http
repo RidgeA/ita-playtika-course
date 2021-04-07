@@ -1,0 +1,29 @@
+GET http://localhost:3000/products?priceFrom=1500&priceTo=5000
+
+###
+GET http://localhost:3000/products/id
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "category": "category",
+  "subcategory": "subcategory",
+  "article": "article",
+  "name": "name",
+  "price": 3000,
+  "quantity": 12,
+  "manufacturer": "manufacturer"
+}
+
+###
+PUT http://localhost:3000/products/id
+Content-Type: application/json
+
+{
+  "price": 3000
+}
+
+###
+DELETE http://localhost:3000/products/id
